@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="conf/patches"/>
+	<classpathentry kind="src" path="src/minecraft"/>
+	<classpathentry kind="src" path="temp/src/minecraft"/>
+	<classpathentry kind="lib" path="jars/libraries/argo/argo/2.25_fixed/argo-2.25_fixed.jar"/>
+	<classpathentry kind="lib" path="jars/libraries/com/google/code/gson/gson/2.2.2/gson-2.2.2.jar"/>
+	<classpathentry kind="lib" path="jars/libraries/com/google/guava/guava/14.0/guava-14.0.jar"/>
+	<classpathentry kind="lib" path="jars/libraries/com/paulscode/codecjorbis/20101023/codecjorbis-20101023.jar"/>
+	<classpathentry kind="lib" path="jars/libraries/com/paulscode/codecwav/20101023/codecwav-20101023.jar"/>
+	<classpathentry kind="lib" path="jars/libraries/com/paulscode/libraryjavasound/20101123/libraryjavasound-20101123.jar"/>
+	<classpathentry kind="lib" path="jars/libraries/com/paulscode/librarylwjglopenal/20100824/librarylwjglopenal-20100824.jar"/>
+	<classpathentry kind="lib" path="jars/libraries/com/paulscode/soundsystem/20120107/soundsystem-20120107.jar"/>
+	<classpathentry kind="lib" path="jars/libraries/commons-io/commons-io/2.4/commons-io-2.4.jar"/>
+	<classpathentry kind="lib" path="jars/libraries/net/java/jinput/jinput-platform/2.0.5/jinput-platform-2.0.5-natives-osx.jar"/>
+	<classpathentry kind="lib" path="jars/libraries/net/java/jinput/jinput/2.0.5/jinput-2.0.5.jar"/>
+	<classpathentry kind="lib" path="jars/libraries/net/java/jutils/jutils/1.0.0/jutils-1.0.0.jar"/>
+	<classpathentry kind="lib" path="jars/libraries/net/sf/jopt-simple/jopt-simple/4.5/jopt-simple-4.5.jar"/>
+	<classpathentry kind="lib" path="jars/libraries/org/apache/commons/commons-lang3/3.1/commons-lang3-3.1.jar"/>
+	<classpathentry kind="lib" path="jars/libraries/org/bouncycastle/bcprov-jdk15on/1.47/bcprov-jdk15on-1.47.jar"/>
+	<classpathentry kind="lib" path="jars/libraries/org/lwjgl/lwjgl/lwjgl_util/2.9.0/lwjgl_util-2.9.0.jar"/>
+	<classpathentry kind="lib" path="jars/libraries/org/lwjgl/lwjgl/lwjgl-platform/2.9.0/lwjgl-platform-2.9.0-natives-osx.jar"/>
+	<classpathentry kind="lib" path="jars/libraries/org/lwjgl/lwjgl/lwjgl/2.9.0/lwjgl-2.9.0.jar"/>
+	<classpathentry kind="lib" path="jars/versions/1.6.4/1.6.4.jar"/>
+	<classpathentry kind="lib" path="runtime/bin/fernflower.jar"/>
+	<classpathentry kind="lib" path="runtime/bin/mcinjector.jar"/>
+	<classpathentry kind="lib" path="runtime/bin/retroguard.jar"/>
+	<classpathentry kind="lib" path="runtime/bin/specialsource.jar"/>
+	<classpathentry kind="lib" path="temp/minecraft_exc.jar"/>
+	<classpathentry kind="lib" path="temp/minecraft_ff_in.jar"/>
+	<classpathentry kind="lib" path="temp/minecraft_rg.jar"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="output" path="bin/minecraft"/>
+</classpath>

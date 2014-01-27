@@ -1,0 +1,60 @@
+package net.minecraft.src;
+
+import java.text.DecimalFormat;
+import java.text.NumberFormat;
+import java.util.Locale;
+import net.minecraft.src.AchievementMap;
+import net.minecraft.src.IStatType;
+import net.minecraft.src.StatCollector;
+import net.minecraft.src.StatList;
+import net.minecraft.src.StatTypeDistance;
+import net.minecraft.src.StatTypeFloat;
+import net.minecraft.src.StatTypeSimple;
+import net.minecraft.src.StatTypeTime;
+
+public class StatBase {
+
+   public final int field_75975_e;
+   private final String field_75978_a;
+   public boolean field_75972_f;
+   public String field_75973_g;
+   private final IStatType field_75976_b;
+   private static NumberFormat field_75977_c = NumberFormat.getIntegerInstance(Locale.US);
+   public static IStatType field_75980_h = new StatTypeSimple();
+   private static DecimalFormat field_75974_d = new DecimalFormat("########0.00");
+   public static IStatType field_75981_i = new StatTypeTime();
+   public static IStatType field_75979_j = new StatTypeDistance();
+   public static IStatType field_111202_k = new StatTypeFloat();
+
+
+   public StatBase(int p_i1546_1_, String p_i1546_2_, IStatType p_i1546_3_) {
+      this.field_75975_e = p_i1546_1_;
+      this.field_75978_a = p_i1546_2_;
+      this.field_75976_b = p_i1546_3_;
+   }
+
+   public StatBase(int p_i1547_1_, String p_i1547_2_) {
+      this(p_i1547_1_, p_i1547_2_, field_75980_h);
+   }
+
+   public StatBase func_75966_h() {
+      this.field_75972_f = true;
+      return this;
+   }
+
+   public StatBase func_75971_g() {
+      if(StatList.field_75942_a.containsKey(Integer.valueOf(this.field_75975_e))) {
+         throw new RuntimeException("Duplicate stat id: \"" + ((StatBase)StatList.field_75942_a.get(Integer.valueOf(this.field_75975_e))).field_75978_a + "\" and \"" + this.field_75978_a + "\" at id " + this.field_75975_e);
+      } else {
+         StatList.field_75940_b.add(this);
+         StatList.field_75942_a.put(Integer.valueOf(this.field_75975_e), this);
+         this.field_75973_g = AchievementMap.func_75962_a(this.field_75975_e);
+         return this;
+      }
+   }
+
+   public String toString() {
+      return StatCollector.func_74838_a(this.field_75978_a);
+   }
+
+}

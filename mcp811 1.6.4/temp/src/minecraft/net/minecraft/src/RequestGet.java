@@ -1,0 +1,28 @@
+package net.minecraft.src;
+
+import net.minecraft.src.ExceptionMcoHttp;
+import net.minecraft.src.Request;
+
+public class RequestGet extends Request {
+
+   public RequestGet(String p_i1141_1_, int p_i1141_2_, int p_i1141_3_) {
+      super(p_i1141_1_, p_i1141_2_, p_i1141_3_);
+   }
+
+   public RequestGet func_96371_f() {
+      try {
+         this.field_96367_a.setDoInput(true);
+         this.field_96367_a.setDoOutput(true);
+         this.field_96367_a.setUseCaches(false);
+         this.field_96367_a.setRequestMethod("GET");
+         return this;
+      } catch (Exception var2) {
+         throw new ExceptionMcoHttp("Failed URL: " + this.field_96365_b, var2);
+      }
+   }
+
+   // $FF: synthetic method
+   public Request func_96359_e() {
+      return this.func_96371_f();
+   }
+}
